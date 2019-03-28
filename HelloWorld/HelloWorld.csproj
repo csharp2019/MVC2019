@@ -126,8 +126,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\GeneratorIzlazaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PozdravSvijeteController.cs" />
+    <Compile Include="Controllers\PrviController.cs" />
+    <Compile Include="Controllers\RezultatMathController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -170,10 +173,14 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\PozdravSvijete\Index.cshtml" />
+    <Content Include="Views\Prvi\DrugaMetodaSParametrima.cshtml" />
+    <Content Include="Views\GeneratorIzlaza\PopisKosarice.cshtml" />
+    <Content Include="Views\GeneratorIzlaza\ListaArtikala.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\RezultatMath\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

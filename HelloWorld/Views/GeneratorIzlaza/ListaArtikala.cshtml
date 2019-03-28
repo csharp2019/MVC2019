@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+    string[] lista = (string[])ViewBag.Lista;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ListaArtikala</title>
+    <style>
+        li {
+            font-size: 18px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Artikli:</h1>
+        <hr />
+        <ul>
+            @for (int i = 0; i < lista.Length; i++)
+            {
+                <li>@lista[i]</li>
+            }
+            @foreach (var item in lista)
+            {
+                <li>@item</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
