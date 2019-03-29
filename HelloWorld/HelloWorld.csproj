@@ -131,6 +131,7 @@
     <Compile Include="Controllers\PozdravSvijeteController.cs" />
     <Compile Include="Controllers\PrviController.cs" />
     <Compile Include="Controllers\RezultatMathController.cs" />
+    <Compile Include="Controllers\SimpleBindController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -176,6 +177,7 @@
     <Content Include="Views\Prvi\DrugaMetodaSParametrima.cshtml" />
     <Content Include="Views\GeneratorIzlaza\PopisKosarice.cshtml" />
     <Content Include="Views\GeneratorIzlaza\ListaArtikala.cshtml" />
+    <Content Include="Views\SimpleBind\SimpleBind.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

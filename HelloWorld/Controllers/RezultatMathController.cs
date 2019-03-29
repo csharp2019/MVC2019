@@ -16,5 +16,9 @@ namespace HelloWorld.Controllers
             return View((object)message);
 
         }
+        public string Kvadriraj(int id)
+        {
+            return (id*id).ToString();
+        }
     }
 }

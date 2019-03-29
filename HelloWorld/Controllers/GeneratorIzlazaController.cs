@@ -29,6 +29,16 @@ namespace HelloWorld.Controllers
             {
                 return RedirectToAction("PopisKosarice");
             }
+            // GeneratorIzlaza/RedirectNaMetodu/hello
+            else if (id=="hello"){
+                return RedirectToAction( "Index", "PozdravSvijete");
+            }
+            // GeneratorIzlaza/RedirectNaMetodu/2
+            else if (id == "2")
+            {
+                return RedirectToAction("Kvadriraj", "RezultatMath", new { id = id });
+            }
+        
             else
             {
                 return RedirectToAction("ListaArtikala");

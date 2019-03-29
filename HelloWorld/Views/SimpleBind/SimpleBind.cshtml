@@ -1,0 +1,17 @@
+﻿@model string
+@{
+    ViewBag.Title = "SimpleBindMetoda";
+}
+
+<h2>SimpleBindMetoda</h2>
+<div>
+    <form method="post">
+        <label>Unesi ime:</label>
+        <input type="text" name="ime" value="" />
+        <input type="submit" />
+
+    </form>
+</div>
+<div>
+    @Model
+</div>
