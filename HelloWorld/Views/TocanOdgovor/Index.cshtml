@@ -1,0 +1,19 @@
+﻿@model string
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<form action="/TocanOdgovor/provjeri" method="post">
+    <label>Crvena</label><input type="radio" name="odgovor" value="crvena" /><br />
+    <label>Plava</label><input type="radio" name="odgovor" value="plava" /><br />
+    <label>Zelena</label><input type="radio" name="odgovor" value="zelena" /><br />
+    <label>Crna</label><input type="radio" name="odgovor" value="crna" /><br />
+    <input type="submit" name="Racunaj" />
+
+</form>
+
+<div>
+    Odgovor: @Model
+</div>

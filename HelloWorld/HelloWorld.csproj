@@ -126,14 +126,17 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BrojGodinaController.cs" />
     <Compile Include="Controllers\GeneratorIzlazaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NarudzbaArtiklaController.cs" />
     <Compile Include="Controllers\OsobaController.cs" />
     <Compile Include="Controllers\PozdravSvijeteController.cs" />
     <Compile Include="Controllers\PrviController.cs" />
+    <Compile Include="Controllers\RazorSintaksaController.cs" />
     <Compile Include="Controllers\RezultatMathController.cs" />
     <Compile Include="Controllers\SimpleBindController.cs" />
+    <Compile Include="Controllers\TocanOdgovorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -184,6 +187,9 @@
     <Content Include="Views\SimpleBind\SimpleBind.cshtml" />
     <Content Include="Views\Osoba\PopuniOsobu.cshtml" />
     <Content Include="Views\NarudzbaArtikla\NaruciArtikal.cshtml" />
+    <Content Include="Views\BrojGodina\RacunajBrojGodina.cshtml" />
+    <Content Include="Views\TocanOdgovor\Index.cshtml" />
+    <Content Include="Views\RazorSintaksa\SwitchView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
