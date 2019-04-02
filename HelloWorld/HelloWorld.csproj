@@ -191,6 +191,8 @@
     <Content Include="Views\TocanOdgovor\Index.cshtml" />
     <Content Include="Views\RazorSintaksa\SwitchView.cshtml" />
     <Content Include="Views\RazorSintaksa\ViewZaForPetlju.cshtml" />
+    <Content Include="Views\Shared\_OsnovniLayout.cshtml" />
+    <Content Include="Views\Shared\_PosebniLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
