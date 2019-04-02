@@ -190,6 +190,7 @@
     <Content Include="Views\BrojGodina\RacunajBrojGodina.cshtml" />
     <Content Include="Views\TocanOdgovor\Index.cshtml" />
     <Content Include="Views\RazorSintaksa\SwitchView.cshtml" />
+    <Content Include="Views\RazorSintaksa\ViewZaForPetlju.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

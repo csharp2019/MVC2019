@@ -13,5 +13,17 @@ namespace HelloWorld.Controllers
         {
             return View();
         }
+        public ViewResult ViewZaForPetlju()
+        {
+            string[] voce = new string[]
+            {
+                "Jabuka",
+                "Kruska",
+                "Banana",
+                "Grožđe",
+                "Šljiva"
+            };
+            return View(voce);
+        }
     }
 }
