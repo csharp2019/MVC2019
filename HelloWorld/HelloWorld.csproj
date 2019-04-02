@@ -131,6 +131,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NarudzbaArtiklaController.cs" />
     <Compile Include="Controllers\OsobaController.cs" />
+    <Compile Include="Controllers\ParcijalniPoglediController.cs" />
     <Compile Include="Controllers\PozdravSvijeteController.cs" />
     <Compile Include="Controllers\PrviController.cs" />
     <Compile Include="Controllers\RazorSintaksaController.cs" />
@@ -193,6 +194,8 @@
     <Content Include="Views\RazorSintaksa\ViewZaForPetlju.cshtml" />
     <Content Include="Views\Shared\_OsnovniLayout.cshtml" />
     <Content Include="Views\Shared\_PosebniLayout.cshtml" />
+    <Content Include="Views\ParcijalniPogledi\PrikaziKosaricu.cshtml" />
+    <Content Include="Views\Shared\_Artikl.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
