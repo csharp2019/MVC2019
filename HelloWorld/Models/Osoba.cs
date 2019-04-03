@@ -14,6 +14,7 @@ namespace HelloWorld.Models
         public string MjestoStanovanja { get; set; }
         public bool Zaposlen { get; set; }
         public string Spol { get; set; }
+        public int BrojCipela { get; set; }
     }
 
 }

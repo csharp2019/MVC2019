@@ -1,0 +1,50 @@
+﻿@model HelloWorld.Models.Osoba
+@{
+    ViewBag.Title = "StrongTypedFormHelper";
+}
+
+<h2>FormHelper</h2>
+
+
+@using (Html.BeginForm("StrongTypedFormHelper", "HtmlHelperi", FormMethod.Post))
+{
+    <div>
+        <label for="Ime">Ime:</label>
+        @Html.TextBoxFor(y => y.Ime)
+    </div>
+    <div>
+        <label for="Prezime">Prezime:</label>
+        @Html.TextBoxFor(y => y.Prezime)
+    </div>
+    <div>
+        <label for="BrojCipela">Broj cipela:</label>
+        @Html.TextBoxFor(x => x.BrojCipela,new {@type="number" })
+    </div>
+    <div>
+        <label for="Email">Email:</label>
+        @Html.TextBoxFor(x => x.Email)
+    </div>
+    <div>
+        <label for="MjestoStanovanja">Mjesto stanovanja:</label>
+        @Html.DropDownListFor(x => x.MjestoStanovanja,
+       new SelectList((string[])ViewBag.Mjesta),"--Odaberi--")
+    </div>
+    <div>
+        <label for="Spol">Spol:</label>
+        @Html.RadioButtonFor(x => x.Spol, "M", true); Muško <br />
+        @Html.RadioButtonFor(x => x.Spol, "Z", false); Žensko <br />
+
+    </div>
+    <div>
+        <label for="Zaposlen">Zaposlen:</label>
+        @Html.CheckBoxFor(x => x.Zaposlen, false)<br />
+    </div>
+    <input type="submit" value="Pošalji" />
+}
+
+<p>
+    <label style="color:red">@ViewBag.Poruka</label>
+</p>
+
+<h2>StrongTypedFormHelper</h2>
+
