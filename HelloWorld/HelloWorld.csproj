@@ -127,6 +127,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BrojGodinaController.cs" />
+    <Compile Include="Controllers\ChildActionController.cs" />
     <Compile Include="Controllers\GeneratorIzlazaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NarudzbaArtiklaController.cs" />
@@ -196,6 +197,7 @@
     <Content Include="Views\Shared\_PosebniLayout.cshtml" />
     <Content Include="Views\ParcijalniPogledi\PrikaziKosaricu.cshtml" />
     <Content Include="Views\Shared\_Artikl.cshtml" />
+    <Content Include="Views\ChildAction\ChildActionView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
