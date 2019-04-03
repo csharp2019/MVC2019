@@ -11,5 +11,9 @@ namespace HelloWorld.Models
         public string Prezime { get; set; }
         public string Email { get; set; }
         public DateTime? DatumRodjenja { get; set; }
+        public string MjestoStanovanja { get; set; }
+        public bool Zaposlen { get; set; }
+        public string Spol { get; set; }
     }
+
 }
