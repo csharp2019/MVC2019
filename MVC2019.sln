@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsPrimjer", "WebForms
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{FC517B1A-3A04-41DC-9E74-8E7CB20DA2C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadaca_5_5_1_6_1_1", "zadaca_5_5_1_6_1_1\zadaca_5_5_1_6_1_1.csproj", "{A5F7C2D3-7B12-4F5B-A0D6-1EF9F3450F1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FC517B1A-3A04-41DC-9E74-8E7CB20DA2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC517B1A-3A04-41DC-9E74-8E7CB20DA2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC517B1A-3A04-41DC-9E74-8E7CB20DA2C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5F7C2D3-7B12-4F5B-A0D6-1EF9F3450F1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5F7C2D3-7B12-4F5B-A0D6-1EF9F3450F1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5F7C2D3-7B12-4F5B-A0D6-1EF9F3450F1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5F7C2D3-7B12-4F5B-A0D6-1EF9F3450F1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

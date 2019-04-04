@@ -1,0 +1,46 @@
+﻿@model HelloWorld.Models.Artikal
+@{
+    Layout = null;
+    Html.EnableClientValidation(false);
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UnesiArtikal</title>
+    <style>
+        label {
+            width: 150px;
+            padding-top: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h3>Unos novog artikla</h3>
+    @using (Html.BeginForm("DodajArtikal", "ListaArtikala"))
+    {
+        <div>
+            <label>Kategorija: </label>
+            @Html.EditorFor(x => x.Kategorija, "TemplateKategorija")
+        </div>
+        <div>
+            <label>Naziv: </label>
+            @Html.EditorFor(x => x.Naziv)
+        </div>
+        <div>
+            <label>Cijena: </label>
+            @Html.EditorFor(x => x.Cijena)
+        </div>
+        <div>
+            <label>Količina: </label>
+            @Html.EditorFor(x => x.Kolicina)
+        </div>
+        <p>
+            <button type="submit">Dodaj!</button>
+        </p>
+    }
+</body>
+</html>

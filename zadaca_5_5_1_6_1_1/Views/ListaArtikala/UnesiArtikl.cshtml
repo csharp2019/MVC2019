@@ -1,0 +1,41 @@
+﻿@model zadaca.Models.Artikl
+@{
+                /**/
+
+                Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UnesiArtikl</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("DodajArtikl", "ListaArtikala"))
+        {
+            <div>
+                <label>Kategorija: </label>
+                @Html.DropDownListFor(x => x.Kategorija, new SelectList((string[])ViewBag.Kategorije), "Odaberi kategoriju")
+            </div>
+            <div>
+                <label>Naziv: </label>
+                @Html.TextBoxFor(x => x.Naziv)
+            </div>
+            <div>
+                <label>Cijena: </label>
+                @Html.TextBoxFor(x => x.Cijena)
+            </div>
+            <div>
+                <label>Količina: </label>
+                @Html.TextBoxFor(x => x.Kolicina)
+            </div>
+            <div>
+                <button type="submit">Dodaj</button>
+            </div>
+        }
+    </div>
+</body>
+</html>

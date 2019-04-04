@@ -1,0 +1,62 @@
+﻿@using HelloWorld.Models
+@model List<Artikal>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DodajArtikal</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        #tArtikli tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        #tArtikli th {
+            color: white;
+            background-color: black;
+        }
+
+        .textRight {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h3>Lista artikala</h3>
+    <div>
+        <table id="tArtikli">
+            <tr>
+                <th>Kategorija</th>
+                <th>Naziv</th>
+                <th>Cijena</th>
+                <th>Količina</th>
+            </tr>
+            @foreach (Artikal item in (List<Artikal>)Model)
+            {
+                <tr>
+                    <td>@item.Kategorija</td>
+                    <td>@item.Naziv</td>
+                    <td class="textRight">@string.Format("{0:N2}", item.Cijena)</td>
+                    <td class="textRight">@item.Kolicina</td>
+                </tr>
+            }
+        </table>
+    </div>
+    <p>
+        <a href="/ListaArtikala/UnesiArtikal">Unos novog artikla</a>
+    </p>
+</body>
+</html>
