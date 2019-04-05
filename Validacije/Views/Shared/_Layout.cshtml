@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+    <style>
+        .field-vadation-error {
+            color: red;
+        }
+
+        .validation-summary-errors {
+            color: red;
+        }
+        .input-validation-error{
+            border:2px solid #f00;
+            background-color:#fee;
+        }
+
+        input[type="checkbox"].input-validation-error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        @RenderBody()
+
+    </div>
+</body>
+</html>

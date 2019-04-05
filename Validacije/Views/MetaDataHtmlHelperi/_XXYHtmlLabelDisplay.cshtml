@@ -1,0 +1,66 @@
+﻿@model Validacije.Models.OsobaMeta
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HtmlLabelDisplay</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 150px;
+            margin: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <div>
+                @Html.Label("OsobaId")
+                @Html.Editor("OsobaId")
+            </div>
+            <div>
+                @Html.Label("Ime")
+                @Html.Editor("Ime")
+            </div>
+            <div>
+                @Html.Label("Prezime")
+                @Html.Editor("Prezime")
+            </div>
+            <div>
+                @Html.Label("Email")
+                @Html.Editor("Email")
+            </div>
+            <div>
+                @Html.LabelFor(x => x.MjestoStanovanja)
+                @Html.EditorFor(x => x.MjestoStanovanja)
+
+            </div>
+            <div>
+                @Html.LabelFor(x => x.Spol)
+                @Html.EditorFor(x => x.Spol)
+
+            </div>
+            <div>
+                @Html.LabelFor(x => x.Zaposlen)
+                @Html.EditorFor(x => x.Zaposlen)<br />
+            </div>
+            <div>
+                @Html.LabelFor(x => x.DatumRodjenja)
+                @Html.EditorFor(x => x.DatumRodjenja)<br />
+            </div>
+            <div>
+                @Html.LabelFor(x => x.Napomena)
+                @Html.EditorFor(x => x.Napomena)<br />
+            </div>
+            <input type="submit" value="Pošalji" />
+        }
+    </div>
+</body>
+</html>

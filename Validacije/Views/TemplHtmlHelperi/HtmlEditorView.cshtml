@@ -1,0 +1,67 @@
+﻿@model Validacije.Models.OsobaTempl
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HtmlEditorView</title>
+    <style>
+        label{
+            display:inline-block;
+            width:150px;
+            margin:5px;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <div>
+                <label for="OsobaId">Osoba Id:</label>
+                @Html.Editor("OsobaId")
+            </div>
+            <div>
+                <label for="Ime">Ime:</label>
+                @Html.Editor("Ime")
+            </div>
+            <div>
+                <label for="Prezime">Prezime:</label>
+                @Html.Editor("Prezime")
+            </div>
+            <div>
+                <label for="Email">Email:</label>
+                @Html.Editor("Email")
+            </div>
+            <div>
+                <label for="MjestoStanovanja">Mjesto stanovanja:</label>
+                @Html.EditorFor(x => x.MjestoStanovanja)
+
+            </div>
+            <div>
+                <label for="Spol">Spol:</label>
+                @Html.EditorFor(x => x.Spol)
+
+            </div>
+            <div>
+                <label for="Zaposlen">Zaposlen:</label>
+                @Html.EditorFor(x => x.Zaposlen)<br />
+            </div>
+            <div>
+                <label for="DatumRodjenja">Datum rođenja:</label>
+                @Html.EditorFor(x => x.DatumRodjenja)<br />
+            </div>
+            <div>
+                <label for="Napomena">Napomena:</label>
+                @Html.EditorFor(x => x.Napomena)<br />
+            </div>
+            <input type="submit" value="Pošalji" />
+        }
+    </div>
+</body>
+</html>

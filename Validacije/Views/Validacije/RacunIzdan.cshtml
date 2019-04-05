@@ -1,0 +1,38 @@
+﻿@model Validacije.Models.Racun
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RacunIzdan</title>
+</head>
+<body>
+    <div>
+        <div>
+            @Html.LabelFor(x => x.Datum)
+            @Html.EditorFor(x => x.Datum)
+         
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Zaposlenik)
+            @Html.EditorFor(x => x.Zaposlenik)
+          
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Kupac)
+            @Html.EditorFor(x => x.Kupac)
+      
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Cijena)
+            @Html.EditorFor(x => x.Cijena)
+        
+
+        </div>
+    </div>
+</body>
+</html>

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadaca_5_5_1_6_1_1", "zadaca_5_5_1_6_1_1\zadaca_5_5_1_6_1_1.csproj", "{A5F7C2D3-7B12-4F5B-A0D6-1EF9F3450F1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validacije", "Validacije\Validacije.csproj", "{1B90D291-14D6-451A-BB07-4A99BFF8C6D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A5F7C2D3-7B12-4F5B-A0D6-1EF9F3450F1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5F7C2D3-7B12-4F5B-A0D6-1EF9F3450F1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5F7C2D3-7B12-4F5B-A0D6-1EF9F3450F1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B90D291-14D6-451A-BB07-4A99BFF8C6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B90D291-14D6-451A-BB07-4A99BFF8C6D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B90D291-14D6-451A-BB07-4A99BFF8C6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B90D291-14D6-451A-BB07-4A99BFF8C6D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

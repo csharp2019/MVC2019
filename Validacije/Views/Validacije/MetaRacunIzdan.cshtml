@@ -1,0 +1,35 @@
+﻿@model Validacije.Models.MetaRacun
+@{
+   // Layout = null;
+}
+<style>
+    label {
+        display: inline-block;
+        width: 150px;
+        margin: 5px;
+        font-weight: bold;
+    }
+</style>
+
+        <div>
+            @Html.LabelFor(x => x.Datum)
+            @Html.EditorFor(x => x.Datum)
+         
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Zaposlenik)
+            @Html.EditorFor(x => x.Zaposlenik)
+          
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Kupac)
+            @Html.EditorFor(x => x.Kupac)
+      
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Cijena)
+            @Html.EditorFor(x => x.Cijena)
+        
+
+        </div>
+

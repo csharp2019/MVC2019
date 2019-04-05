@@ -1,0 +1,28 @@
+﻿@model Validacije.Models.OsobaMeta
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MetaDataView</title>
+</head>
+<body>
+    <h2>@Html.LabelForModel()</h2>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <div>
+                @Html.EditorForModel()
+            </div>
+            <div>
+                @Html.EditorFor(x=>x.AdresaOsobe)
+            </div>
+            <input type="submit" value="Pošalji" />
+        }
+    </div>
+</body>
+</html>
