@@ -22,7 +22,7 @@ namespace Validacije.Models
         [UIHint("TemplMjesta")]
         public string MjestoStanovanja { get; set; }
 
-        [UIHint("TemplSplo")]
+        [UIHint("TemplSpol")]
         public string  Spol { get; set; }
 
         public bool Zaposlen { get; set; }
