@@ -1,0 +1,21 @@
+﻿@model List<ado_net_spajanje_na_bazu.Models.Tecaj>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @foreach (var t in Model)
+        {
+            @t.Id @t.Naziv @t.Opis <br />
+        }
+    </div>
+</body>
+</html>

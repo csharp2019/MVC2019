@@ -74,5 +74,61 @@ namespace ado_net_spajanje_na_bazu.Controllers
             }
             return View("Index");
         }
+        public ActionResult Delete()
+        {
+            // Prvo kreiramo conn string
+            // string connString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=dbAlgebra;Integrated Security=True";
+            string connString = ConfigurationManager.ConnectionStrings["dbAlgebraConnString"].ConnectionString;
+            // Nakon toga instanca Sqlconnection
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                string cmdTxt = "";
+                cmdTxt += "DELETE FROM [dbo].[tbltecajevi] "
+                    + " WHERE [dbo].[tbltecajevi].id=2";
+
+                SqlCommand cmd = new SqlCommand(cmdTxt, conn);
+                cmd.Connection.Open();
+
+                int brojRedaka = cmd.ExecuteNonQuery();
+
+                if (brojRedaka > 0)
+                {
+                    ViewBag.Message = "Zapis je obrisan u bazi!";
+                }
+                else
+                {
+                    ViewBag.Message = "Zapis nije pronadjen ili nije obrisan";
+                }
+            }
+            return View("Index");
+        }
+        public ActionResult Count()
+        {
+            // Prvo kreiramo conn string
+            // string connString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=dbAlgebra;Integrated Security=True";
+            string connString = ConfigurationManager.ConnectionStrings["dbAlgebraConnString"].ConnectionString;
+            // Nakon toga instanca Sqlconnection
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                string cmdTxt = "";
+                cmdTxt += "SELECT count(*) FROM [dbo].[tbltecajevi] ";
+
+                SqlCommand cmd = new SqlCommand(cmdTxt, conn);
+                cmd.Connection.Open();
+
+                // vraća prvi redak, u ovom slucaju samo broj zapisa
+                int brojRedaka = (int)cmd.ExecuteScalar();
+
+                if (brojRedaka > 0)
+                {
+                    ViewBag.Message = "U tablici se nalazi "+ brojRedaka+" zapisa";
+                }
+                else
+                {
+                    ViewBag.Message = "Tablica je prazna";
+                }
+            }
+            return View("Index");
+        }
     }
 }
