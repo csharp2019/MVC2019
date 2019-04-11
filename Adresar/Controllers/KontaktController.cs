@@ -18,5 +18,25 @@ namespace Adresar.Controllers
                                              select k).ToList();
             return View(aktivniKontakti);
         }
+        // GET: Kontakt/Create
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
+        // POST: Kontakt/Create
+        [HttpPost]
+        public ActionResult Create(Kontakt kontakt)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Kontakti.Add(kontakt);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(kontakt);
+        }
+
+
     }
 }
