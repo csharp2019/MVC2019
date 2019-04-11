@@ -29,5 +29,6 @@ namespace Adresar.Models
         {
             return new ApplicationDbContext();
         }
+        public virtual DbSet<Kontakt> Kontakti { get; set; }
     }
 }
