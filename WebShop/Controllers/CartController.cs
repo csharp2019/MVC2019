@@ -32,6 +32,8 @@ namespace WebShop.Controllers
             }
             */
             Proizvodi proizvodi = db.Proizvodis.Find(id);
+           int prodet = db.Proizvodis.Find(id).NarudzbeDetaljis.Count;
+            Session["prodet"] = prodet;
             lstProizvodi.Add(proizvodi);
             Session["Cart"] = lstProizvodi;
             if(proizvodi == null)
@@ -41,6 +43,13 @@ namespace WebShop.Controllers
             var proi = db.Proizvodis.Include(p => p.MjereProizvoda);
             return RedirectToAction("Index", "WebShop", proi.ToList()); //proizvodi.ToList());
             //return View(lstProizvodi);
+        }
+        public ActionResult RemoveFromCart(int index)
+        {
+            lstProizvodi = Session["Cart"] as List<Proizvodi>;
+            lstProizvodi.RemoveAt(index);
+            Session["Cart"] = lstProizvodi;
+            return View("Index", lstProizvodi);
         }
     }
 }

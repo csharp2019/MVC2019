@@ -1,23 +1,26 @@
 ﻿@model IEnumerable<WebShop.Models.Proizvodi>
 @{
     var listCount = 0;
+    int brojArtikala = 0;
     if (Session["Cart"] != null)
     {
         List<WebShop.Models.Proizvodi> kosarica
             = Session["Cart"] as List<WebShop.Models.Proizvodi>;
         listCount = kosarica.Count;
+
+
+        
+        brojArtikala = int.Parse(Session["prodet"].ToString());
     }
 }
 <p>
-    @Html.ActionLink("Create New", "Create")
-    @* //TODO: treba posstaviti badge za cart, zbirka str.142 *@
-
+    @Html.ActionLink(linkText: "Cart", actionName: "Index", controllerName: "Cart") (@listCount)
 </p>
 
 <button type="button" class="btn btn-primary">Košarica <span class="glyphicon glyphicon-shopping-cart"></span><span class="badge"> @listCount</span></button>
 
 <p>
-
+    Detalji narudžbe:@brojArtikala
 </p>
 <table class="table">
     <tr>

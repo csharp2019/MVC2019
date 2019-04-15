@@ -1,8 +1,8 @@
 ﻿@model IEnumerable<WebShop.Models.Proizvodi>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+@{ 
+    ViewBag.Title = "Index";
+    int itemIndex = 0;
+}
 <table class="table">
     <tr>
         <th>
@@ -23,29 +23,30 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.VrijemeKreiranja)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Naziv)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Cijena)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Dostupan)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MjereProizvoda.Naziv)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.VrijemeKreiranja)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Naziv)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cijena)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dostupan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MjereProizvoda.Naziv)
+            </td>
+            <td>
+                @Html.ActionLink("Remove", "RemoveFromCart", new { index = itemIndex })
+            </td>
+        </tr>
+    }
 
 </table>
+
+@Html.ActionLink(linkText: "Checkout", actionName: "CreateUser", controllerName: "Checkout")
