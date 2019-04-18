@@ -15,7 +15,7 @@ namespace Adresar.Controllers
             KontaktServiceClient klijent = new KontaktServiceClient();
 
             List<Kontakt> kontakti = klijent.DohvatiAktivneKontakte().ToList();
-
+          
             return View(kontakti);
         }
     }
