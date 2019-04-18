@@ -1,4 +1,4 @@
-enanamespace Poklon.Migrations
+namespace Poklon.Migrations
 {
     using System;
     using System.Data.Entity;
@@ -9,7 +9,7 @@ enanamespace Poklon.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Poklon.Models.ApplicationDbContext context)
